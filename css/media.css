@@ -1,0 +1,65 @@
+@media (min-width: 1400px) {
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.25rem;
+    }
+    h4 {
+        font-size: 1.75rem;
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+    h6 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contacts {
+        height: auto;
+        padding: 0;
+    }
+    .contacts #map {
+        position: relative;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 40px 0;
+    }
+    .unique .unique-text {
+        margin-top: 40px;
+    }
+    .uslugi-1 .uslugi-text img, .uslugi-2 .uslugi-image img {
+        display: none;
+    }
+    .uslugi-1 .uslugi-text, .uslugi-2 .uslugi-image {
+        width: 100%;
+        height: auto;
+    }
+    .uslugi-2 .uslugi-image .uslugi-image__bg {
+        max-width: 100%;
+    }
+    .otzivi img {
+        width: auto;
+    }
+    footer .footer-logo {
+        text-align: center;
+    }
+    footer .footer-contacts {
+        align-items: center !important;
+        margin: 30px 0 0;
+    }
+    .btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .h1, h1 {
+        font-size: calc(1.175rem + 1.5vw) !important;
+    }
+}

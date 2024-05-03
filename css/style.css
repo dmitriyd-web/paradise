@@ -1,0 +1,423 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style-type: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --pink-color: #D8C1BF;
+    --light-black-color: #424242;
+}
+
+ul[class], ol[class] {
+    padding: 0;
+    list-style-type: none;
+}
+  
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scrollbar-color: var(--primary-color) var(--bg-color);
+    scrollbar-width: thin;
+}
+    *::-webkit-scrollbar {
+    cursor: pointer;
+    width: 6px;
+    background: transparent;
+    border-radius: 3px;
+}
+    *::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: var(--primary-color);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    border-radius: 3px;
+}
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-color: var(--primary-color) var(--primary-color);
+    scrollbar-width: thin;
+}
+    *::before::-webkit-scrollbar, *::after::-webkit-scrollbar {
+    cursor: pointer;
+    width: 6px;
+    background: var(--bg-color);
+    border-radius: 3px;
+}
+    *::before::-webkit-scrollbar-thumb, *::after::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: transparent;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    border-radius: 0px;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    src: url("fonts/Montserrat-Light.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    src: url("fonts/Montserrat-Medium.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    src: url("fonts/Montserrat-SemiBold.ttf") format("ttf");
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+
+
+section {
+    position: relative;
+    padding: 80px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*----------header----------*/
+
+header .navbar-brand {
+    width: 150px;
+}
+
+header .navbar .navbar-collapse {
+    justify-content: flex-end !important;
+}
+
+header .navbar a {
+    color: #212529 !important;
+    transition: .3s;
+}
+
+header .navbar a:hover {
+    color: #212529;
+    opacity: .5;
+}
+
+/*----------main----------*/
+
+.main {
+    padding: 140px 0 120px;
+    background-image: url(../img/mailn.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .6);
+    z-index: 3;
+}
+
+.main h1, .main h4 {
+    position: relative;
+    font-weight: bold;
+    z-index: 5;
+}
+
+.main button {
+    position: relative;
+    z-index: 5;
+}
+
+/*----------unique----------*/
+
+.unique img {
+    border-top: 5px solid #212529;
+    border-right: 10px solid #212529;
+    border-bottom: 10px solid #212529;
+    transition: .3s;
+}
+
+.unique .unique-text h3 {
+    font-style: italic;
+}
+
+/*----------uslugi-1----------*/
+
+.uslugi-1 {
+    background-color: var(--pink-color);
+    overflow-x: hidden;
+}
+
+.uslugi-1 .uslugi-text {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 700px;
+    height: 650px;
+    z-index: 3;
+}
+
+.uslugi-1 .uslugi-text .uslugi-text__bg {
+    margin: 1rem 0 1rem 1rem;
+}
+
+.uslugi-1 .uslugi-text .uslugi-text__bg p {
+
+}
+
+.uslugi-1 .uslugi-text img {
+    position: absolute;
+    height: 600px;
+    right: -200px;
+    top: 25px;
+}
+
+/*----------uslugi-2----------*/
+
+.uslugi-2 {
+   
+}
+
+.uslugi-2 .uslugi-image {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    background-color: var(--pink-color);
+    width: 700px;
+    height: 650px;
+    margin: 0 0 0 auto;
+    z-index: 3;
+}
+
+.uslugi-2 .uslugi-image .uslugi-image__bg {
+    max-width: 330px;
+    margin: 1rem 0 1rem 1rem;
+}
+
+.uslugi-2 .uslugi-image .uslugi-image__bg p {
+
+}
+
+.uslugi-2 .uslugi-image img {
+    position: absolute;
+    height: 600px;
+    left: -200px;
+    top: 25px;
+}
+
+/*----------works----------*/
+
+.works {
+    background-color: var(--pink-color);
+}
+
+.works h2 {
+    color: var(--light-black-color);
+}
+
+.works p {
+    color: var(--light-black-color);
+}
+
+.works a {
+    overflow: hidden;
+    transition: .3s;
+}
+
+.works a img {
+    transition: .3s;
+}
+
+.works a:hover {
+    border-radius: 3rem;
+}
+
+.works a:hover img {
+    transform: scale(1.05);
+}
+
+/*----------otzivi----------*/
+
+.otzivi img {
+    width: 600px;
+    margin: 40px auto 0;
+}
+
+/*----------buy-serf----------*/
+
+.buy-serf {
+    background-color: var(--pink-color);
+}
+
+/*----------contacts----------*/ 
+
+.contacts {
+    height: 400px;
+}
+
+.contacts #map {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contacts .contacts-info {
+    position: relative;
+    background-color: var(--white-color);
+    padding: 40px;
+    z-index: 5;
+}
+
+.contacts .col-xl-4 p + p {
+    margin: 10px 0 0;
+}
+
+/*----------footer----------*/ 
+
+footer {
+    padding: 40px 0;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer .footer-phone {
+    font-size: 1.2rem;
+    color: #212529;
+    margin-bottom: .55rem;
+}
+
+footer .footer-phone .bi-telephone-fill {
+
+}
+
+footer .footer-text {
+    font-size: 1.2rem;
+    color: #212529;
+    margin-bottom: .55rem;
+}
+
+footer .footer-messangers {
+
+}
+
+footer .footer-messangers .bi-whatsapp {
+    font-size: 2.2rem;
+    color: #212529;
+    margin-right: 1rem;
+}
+
+footer .footer-messangers .bi-telegram {
+    font-size: 2.2rem;
+    color: #212529;
+}
+
+/*----------modal---------*/ 
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    margin: 2rem auto;
+    font-size: 1.3rem;
+    color: #FFFFFF !important;
+    padding: 1.2rem 2.5rem !important;
+    outline: none;
+    border: none !important;
+    border-radius: 40px !important;
+    transition: .3s;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+.modal-content {
+    background-color: var(--pink-color);
+}
+
+.modal-content input {
+    width: 100%;
+    margin: 0 0 .8rem;
+    padding: .5rem .4rem !important;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.modal-content .btn {
+    margin: 0 auto 1rem;
+    font-size: 1rem;
+}
+
+.modal-content p {
+    font-size: 0.85rem;
+}
+
+.modal-content p a {
+    color: white;
+    text-decoration: underline;
+}
